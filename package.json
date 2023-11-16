@@ -1,0 +1,25 @@
+{
+	"name": "fmentor-stats-preview-js-functional",
+	"version": "1.0.0",
+	"description": "stats preview card component using js functional",
+	"main": "index.js",
+	"scripts": {
+		"dev": "sass --watch scss/main.scss css/main.css",
+		"build": "sass scss/main.scss css/main.css",
+		"lint": "prettier --write ."
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/al3xback/fmentor-stats-preview-js-functional.git"
+	},
+	"author": "alex <al3xback@gmail.com>",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/al3xback/fmentor-stats-preview-js-functional/issues"
+	},
+	"homepage": "https://github.com/al3xback/fmentor-stats-preview-js-functional#readme",
+	"devDependencies": {
+		"prettier": "^2.8.8",
+		"sass": "^1.62.1"
+	}
+}
