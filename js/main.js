@@ -22,6 +22,7 @@ const createCardEl = () => {
 
 	const cardImageEl = createElement('img', null, null, [
 		createElementAttribute('src', './images/meeting.jpg'),
+		createElementAttribute('alt', ''),
 	]);
 
 	cardImageInnerEl.appendChild(cardImageEl);
