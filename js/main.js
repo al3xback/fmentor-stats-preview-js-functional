@@ -20,7 +20,9 @@ const createCardEl = () => {
 
 	const cardImageInnerEl = createElement('div', 'card__image-inner');
 
-	const cardImageEl = createImageElement('./images/meeting.jpg');
+	const cardImageEl = createElement('img', null, null, [
+		createElementAttribute('src', './images/meeting.jpg'),
+	]);
 
 	cardImageInnerEl.appendChild(cardImageEl);
 
@@ -113,20 +115,29 @@ const createFooterEl = () => {
 
 	const footerTextEl = createElement('p', null, 'Challenge by ');
 
-	const footerTextLinkCreatorEl = createLinkElement(
-		'https://www.frontendmentor.io?ref=challenge',
+	const footerTextLinkCreatorEl = createElement(
+		'a',
 		'btn btn--link',
 		'Frontend Mentor',
-		'noopener',
-		'_blank'
+		[
+			createElementAttribute(
+				'href',
+				'https://www.frontendmentor.io?ref=challenge'
+			),
+			createElementAttribute('rel', 'noopener'),
+			createElementAttribute('target', '_blank'),
+		]
 	);
 
-	const footerTextLinkCoderEl = createLinkElement(
-		'https://github.com/al3xback',
+	const footerTextLinkCoderEl = createElement(
+		'a',
 		'btn btn--link',
 		'al3xback',
-		'noopener',
-		'_blank'
+		[
+			createElementAttribute('href', 'https://github.com/al3xback'),
+			createElementAttribute('rel', 'noopener'),
+			createElementAttribute('target', '_blank'),
+		]
 	);
 
 	footerTextEl.appendChild(footerTextLinkCreatorEl);
