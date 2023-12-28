@@ -7,9 +7,9 @@
 	@include mix.flex-direction(column);
 	width: 100%;
 	max-width: func.em(420, var.$font-size-primary);
+	background-color: var.$color-dark-desaturated-blue;
 	margin: func.em(40, var.$font-size-primary) 0
 		func.em(60, var.$font-size-primary);
-	background-color: var.$color-dark-desaturated-blue;
 	@include mix.border-radius(8px);
 	overflow: hidden;
 }
