@@ -12,7 +12,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: -
+- Live Site URL: https://al3xback.github.io/fmentor-stats-preview-js-functional/
 
 ## My process
 
